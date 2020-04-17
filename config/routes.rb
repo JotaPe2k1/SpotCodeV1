@@ -21,6 +21,10 @@ Rails.application.routes.draw do
         resources :recently_heards, only: :create
         concerns :favoritable, favoritable_type: 'Album'
       end
+      resources :artists, only: :show do
+        resources :recently_heards, only: :create
+        concerns :favoritable, favoritable_type: 'Artist'
+      end
       resources :favorites, only: :index
       resources :songs, only: [] do
         concerns :favoritable, favoritable_type: 'Song'
