@@ -17,7 +17,6 @@ country.image.attach(io: File.open("#{tmp_dir}/seed_files/country.png"), filenam
 jazz = Category.create(name: "Jazz")
 jazz.image.attach(io: File.open("#{tmp_dir}/seed_files/jazz.png"), filename: "jazz.png")
 
-
 # ANDREW HOWS
 
 andrew_howes = Artist.create(name: "Andrew Howes")
@@ -204,7 +203,6 @@ ivy = inside.songs.create(title: "Ivy", played_count: Random.rand(1000))
 ivy.file.attach(io: File.open("#{tmp_dir}/seed_files/musics/ivy.mp3"), filename: "ivy.mp3")
 escape = inside.songs.create(title: "Escape", played_count: Random.rand(1000))
 escape.file.attach(io: File.open("#{tmp_dir}/seed_files/musics/escape.mp3"), filename: "escape.mp3")
-
 
 
 #========================
